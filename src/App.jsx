@@ -3,7 +3,7 @@ import './App.css'
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from '@chatscope/chat-ui-kit-react';
 
-const API_KEY = "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";
+const API_KEY = "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";
 
  
 function App() {
@@ -67,9 +67,7 @@ function App() {
     body: JSON.stringify(apiRequestBody)
   }).then((data) =>{
       return data.json()
-  }).then((data) =>{
-    console.log(data)
-    console.log(data.choices[0].message.content)
+  }).then((data) =>{  
     setMessages(
       [...chatMessages, {
         message:data.choices[0].message.content,
