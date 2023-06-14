@@ -3,7 +3,7 @@ import './App.css'
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from '@chatscope/chat-ui-kit-react';
 
-const API_KEY = "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";
+const API_KEY = "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";
 
  
 function App() {
